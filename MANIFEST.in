@@ -2,3 +2,5 @@ include README.rst
 include LICENSE
 include versioneer.py
 include nomenclature/_version.py
+recursive-include docs *
+prune docs/_build
