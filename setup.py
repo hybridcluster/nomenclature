@@ -42,7 +42,7 @@ setup(
     description="Linux Namespace Manipulation",
     install_requires=["cffi"],
     license="APL2",
-    packages=["nomenclature"],
+    packages=["nomenclature", "nomenclature.tests"],
     url="https://github.com/hybridcluster/nomenclautre/",
     maintainer='Tom Prince',
     maintainer_email='tom.prince@hybridcluster.com',
