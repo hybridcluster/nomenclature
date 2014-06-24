@@ -14,7 +14,14 @@ def read(path):
     with open(path) as f:
         return f.read()
 
-from nomenclature import _lib
+try:
+    from nomenclature import _lib
+except ImportError:
+    # installing - there is no cffi yet
+    ext_modules = []
+else:
+    # building bdist - cffi is here!
+    ext_modules = [_lib.ffi.verifier.get_extension()]
 
 setup(
     classifiers=[
@@ -47,5 +54,5 @@ setup(
     },
 
     ext_package="nomenclature",
-    ext_modules=[_lib.ffi.verifier.get_extension()],
+    ext_modules=ext_modules,
 )
