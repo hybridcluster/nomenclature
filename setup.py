@@ -43,7 +43,7 @@ setup(
     install_requires=["cffi"],
     license="APL2",
     packages=["nomenclature", "nomenclature.tests"],
-    url="https://github.com/hybridcluster/nomenclautre/",
+    url="https://github.com/hybridcluster/nomenclature/",
     maintainer='Tom Prince',
     maintainer_email='tom.prince@hybridcluster.com',
     long_description=read('README.rst'),
